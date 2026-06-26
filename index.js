@@ -13,7 +13,13 @@ const productos = [
    { id: 3, nombre: 'teclado', precio: 45 },
   { id: 4, nombre: 'moonitor', precio: 300 },
 ]
-//ruta de la api
+ //ruta de inicio con enlace a los array de los prodcutos
+app.get('/', (req, res) => {
+  res.send(`esta es la ruta de inicio
+    <a href="/api/productos">Ver productos</a>
+  `)
+})
+//ruta de la api, para ver todos los produtos
 app.get('/api/productos', (req, res) => {
   res.json(productos)
 })
