@@ -8,7 +8,7 @@ app.use(cors())
 app.use(express.json())
 
 const productos = [ 
-  { id: 1, nombre: 'Lapto', precio: 1200 },
+  { id: 1, nombre: 'Lapto', precio: 1220 },
    { id: 2, nombre: 'mouse', precio: 25 },
    { id: 3, nombre: 'teclado', precio: 45 },
   { id: 4, nombre: 'moonitor', precio: 300 },
